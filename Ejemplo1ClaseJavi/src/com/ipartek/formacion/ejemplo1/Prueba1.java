@@ -10,7 +10,7 @@ public class Prueba1 {
 					//si modificas uno modificas el otro, sirve para compartir el objeto.
 		
 		Punto pt2=(Punto)p.clone();//clon real de P, haciendo casting no puedes convertir nada, simplemente extrae la zona de info	
-		//int i=0;
+		int i=0;
 //		
 //		Object o=i  ;// estaria haciendo Object o=new integer(i)
 		//System.out.println(p); //no hace falta poner el toString si lo has implantado a la clase
