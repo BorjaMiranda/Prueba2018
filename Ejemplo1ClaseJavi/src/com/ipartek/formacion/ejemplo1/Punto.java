@@ -1,15 +1,37 @@
 package com.ipartek.formacion.ejemplo1;
 
+import javax.management.RuntimeErrorException;
+
 public class Punto {
+public static final int default_y = 1;
+public static final int default_x = 1;
+public static final int MAX_X=100;
 private int x,y;
-//ctrl + 7 activa un trozo d codigo en comntario
-public Punto(int x, int y) {
-	super();
+public int getX() {
+	return x;
+}
+public void setX(int x) {
+	Error e = null;
+	if(x>MAX_X)
+		throw new RuntimeException(e);
 	this.x = x;
+}
+public int getY() {
+	return y;
+}
+public void setY(int y) {
 	this.y = y;
 }
+//ctrl + 7 activa un trozo d codigo en comntario
+public Punto(int x, int y) {
+//	super();
+//	this.x = x;
+//	this.y = y;
+	setX(x);
+	setY(y);
+}
 public Punto() {
-	this(1,1); //x=1,y=1;  si fuese this(1) llamaria al constructor de abajo xq solo tiene 1 parametro
+	this(default_x,default_y); //x=1,y=1;  si fuese this(1) llamaria al constructor de abajo xq solo tiene 1 parametro
 }
 
 
