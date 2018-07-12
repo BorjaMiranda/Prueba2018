@@ -6,7 +6,7 @@ public class Prueba1 {
 public static final int TAM_ARRAY=10; //statico es q es a nivel de clase, no de instancia. Final es q solo puede tner ese valor y no modificar
 //mayusculas=constante	
 
-//HOLIIII asdasfdsdfasdd
+//HOLIIII asdasfdsdfasddaaa
 
 public static void main(String[] args) {
 	char[][] tablero= new char[8][8];
