@@ -1,9 +1,47 @@
 package com.ipartek.formacion.ejemplo1;
 
+import java.util.Scanner;
+
 public class Prueba1 {
 public static final int TAM_ARRAY=10; //statico es q es a nivel de clase, no de instancia. Final es q solo puede tner ese valor y no modificar
 //mayusculas=constante	
+
+//HOLIIII
+
 public static void main(String[] args) {
+	char[][] tablero= new char[8][8];
+	tablero[0][0]='T';
+	tablero[1][0]='O';
+	tablero[2][0]='N';
+
+tablero[0]=new char[] {'T','C','A','R','r','A','C','T'};
+tablero[7]=tablero[0].clone();
+for(int f=1;f<=6;f+=5) {
+	for (int columna = 0; columna < 8; columna++) {
+		tablero[1][columna]='p';
+		//System.out.println(tablero[1][columna]);
+		}
+	}
+
+
+
+
+for (int fila = 0; fila < 8; fila++) {
+	for (int columna = 0; columna < 8; columna++) {
+		System.out.print(tablero[fila][columna]);
+	}
+}
+
+
+}
+
+
+
+
+
+
+
+public static void mainArraysetc(String[] args) {
 		
 		int[] arr= new int[2];
 		arr[0]=5;
@@ -39,7 +77,6 @@ public static void main(String[] args) {
 		System.out.print("dime algo");
 		
 		//String hola=
-				System.console().readLine();
 		System.out.println();
 		// TODO Auto-generated method stub "to do" es para algo que no terminas y ir a ese punto
 //disable spell checking para que no de errores los comentarios en castellano
